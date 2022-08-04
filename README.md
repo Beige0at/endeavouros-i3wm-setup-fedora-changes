@@ -127,6 +127,14 @@ Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys 
 
 `dbus-launch dconf load / < xed.dconf` (setup xed-editor)
 
+install awesome-terminal-fonts (https://github.com/gabrielelana/awesome-terminal-fonts):
+
+```
+git clone https://github.com/gabrielelana/awesome-terminal-fonts
+cp -R awesome-terminal-fonts ~/.fonts
+fc-cache -fv ~/.fonts
+```
+
 
 ## or use the `i3_install`:
 
