@@ -1,12 +1,15 @@
 #!/usr/bin/env bash 
-git clone https://github.com/endeavouros-team/endeavouros-i3wm-setup.git
+git clone https://github.com/Beige0at/endeavouros-i3wm-setup-fedora-changes.git
 cd endeavouros-i3wm-setup
 cp -R .config ~/                                            
 chmod -R +x ~/.config/i3/scripts
 cp .nanorc ~/
 dbus-launch dconf load / < ~/xed.dconf
 sed -i 's|\(exec --no-startup-id ~/set_once.sh\)|# \1|' ~/.config/i3/config
-wget https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-packages-lists/master/i3
-sudo pacman -S --needed - < i3
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf upgrade -y --refresh
+sudo dnf install -y @base-x acpi arandr lightdm lightdm-settings slick-greeter dex dmenu dunst file-roller galculator gthumb gtk-murrine-engine \
+gvfs i3-gaps i3lock i3blocks i3status jq lxappearance nitrogen numlockx network-manager-applet picom playerctl polkit-gnome rofi scrot sysstat \
+Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys xdg-user-dirs-gtk papirus-icon-theme arc-theme mpv
 cd ..
 rm -rf endeavouros-i3wm-setup
