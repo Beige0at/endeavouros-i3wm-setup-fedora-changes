@@ -10,6 +10,8 @@
 * [dex](https://github.com/jceb/dex) : autostarting apps from /etc/xdg/autostart/ (*)
 * Notifications are done with [dunst](https://dunst-project.org): CONFIG FILE = ~/.config/dunst/dunstrc
 
+*Note:* changes to Papirus icon theme instead of Qogir
+
 **dex is enabled by default in config to autostart like on a DE. To disable, comment out the line:** 
 
 `exec --no-startup-id dex --autostart --environment i3`
@@ -104,7 +106,14 @@ But Xcursor  needs to be set inside the `~/.Xresources`  manually if you change 
 3. copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
 4. install needed packages
 
-`git clone https://github.com/endeavouros-team/endeavouros-i3wm-setup.git`
+**install needed apps and programms for i3wm(also enables rpmfusions):**
+`sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf upgrade -y --refresh
+sudo dnf install -y @base-x acpi arandr lightdm lightdm-settings slick-greeter dex dmenu dunst file-roller galculator gthumb gtk-murrine-engine \
+gvfs i3-gaps i3lock i3blocks i3status jq lxappearance nitrogen numlockx network-manager-applet picom playerctl polkit-gnome rofi scrot sysstat \
+Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys xdg-user-dirs-gtk papirus-icon-theme arc-theme mpv`
+
+`git clone https://github.com/Beige0at/endeavouros-i3wm-setup-fedora-changes.git`
 
 `cd endeavouros-i3wm-setup`
 
@@ -116,15 +125,10 @@ But Xcursor  needs to be set inside the `~/.Xresources`  manually if you change 
 
 `dbus-launch dconf load / < xed.dconf` (setup xed-editor)
 
-**install needed apps and programms for i3wm:**
-We do use now the default packages lists repo for all packages lists:
-
-`wget https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-packages-lists/master/i3`
-`sudo pacman -S --needed - < i3`
 
 ## or use the `i3_install`:
 
-`wget https://raw.githubusercontent.com/endeavouros-team/endeavouros-i3wm-setup/main/i3_install`
+`wget https://raw.githubusercontent.com/Beige0at/endeavouros-i3wm-setup-fedora-changes/main/i3_install`
 
 
 ## warning this will may overwrite existing files!
