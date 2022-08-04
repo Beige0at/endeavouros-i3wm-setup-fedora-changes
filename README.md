@@ -10,7 +10,7 @@
 * [dex](https://github.com/jceb/dex) : autostarting apps from /etc/xdg/autostart/ (*)
 * Notifications are done with [dunst](https://dunst-project.org): CONFIG FILE = ~/.config/dunst/dunstrc
 
-*Note:* changes to Papirus icon theme instead of Qogir
+*Note:* changes to Papirus icon theme instead of Qogir and dunst slightly different
 
 **dex is enabled by default in config to autostart like on a DE. To disable, comment out the line:** 
 
@@ -117,7 +117,7 @@ Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys 
 
 `git clone https://github.com/Beige0at/endeavouros-i3wm-setup-fedora-changes.git`
 
-`cd endeavouros-i3wm-setup`
+`cd endeavouros-i3wm-setup-fedora-changes`
 
 `cp .Xresources ~/.Xresources`
 
