@@ -107,13 +107,13 @@ But Xcursor  needs to be set inside the `~/.Xresources`  manually if you change 
 4. install needed packages
 
 **install needed apps and programms for i3wm(also enables rpmfusions):**
-...
+```
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf upgrade -y --refresh
 sudo dnf install -y @base-x acpi arandr lightdm lightdm-settings slick-greeter dex dmenu dunst file-roller galculator gthumb gtk-murrine-engine \
 gvfs i3-gaps i3lock i3blocks i3status jq lxappearance nitrogen numlockx network-manager-applet picom playerctl polkit-gnome rofi scrot sysstat \
 Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys xdg-user-dirs-gtk papirus-icon-theme arc-theme mpv
-...
+```
 
 `git clone https://github.com/Beige0at/endeavouros-i3wm-setup-fedora-changes.git`
 
