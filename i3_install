@@ -14,6 +14,6 @@ sed -i 's|\(exec --no-startup-id ~/set_once.sh\)|# \1|' ~/.config/i3/config
 cd ..
 rm -rf endeavouros-i3wm-setup-fedora-changes
 git clone https://github.com/gabrielelana/awesome-terminal-fonts
-cp -R awesome-terminal-fonts ~/.fonts
+cp -R awesome-terminal-fonts/.build ~/.fonts
 fc-cache -fv ~/.fonts
 rm -rf awesome-terminal-fonts
