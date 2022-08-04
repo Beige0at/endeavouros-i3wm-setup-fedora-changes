@@ -1,10 +1,5 @@
 ![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/eos-i3-banner.png "eos-i3")
 
-# endeavouros-i3wm-setup
-**maintainer: joekamprad --->  setup for i3-wm under [EndeavourOS](https://endeavouros.com) new config 2022 <---**
-
-[![Maintenance](https://img.shields.io/maintenance/yes/2022.svg)]()
-
 # Tutorial for i3-wm settings:
 * background handled by [nitrogen](https://wiki.archlinux.org/index.php/nitrogen)
 * gtk3 theme handled by [lxappearance-gtk3](https://wiki.lxde.org/de/LXAppearance)
