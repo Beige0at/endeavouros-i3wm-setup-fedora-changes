@@ -131,7 +131,7 @@ install awesome-terminal-fonts (https://github.com/gabrielelana/awesome-terminal
 
 ```
 git clone https://github.com/gabrielelana/awesome-terminal-fonts
-cp -R awesome-terminal-fonts ~/.fonts
+cp -R awesome-terminal-fonts/.build ~/.fonts
 fc-cache -fv ~/.fonts
 ```
 
