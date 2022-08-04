@@ -5,7 +5,7 @@ sudo dnf install -y @base-x acpi arandr lightdm lightdm-settings slick-greeter d
 gvfs i3-gaps i3lock i3blocks i3status jq lxappearance nitrogen numlockx network-manager-applet picom playerctl polkit-gnome rofi scrot sysstat \
 Thunar thunar-volman thunar-archive-plugin tumbler xed xfce4-terminal xbindkeys xdg-user-dirs-gtk papirus-icon-theme arc-theme mpv
 git clone https://github.com/Beige0at/endeavouros-i3wm-setup-fedora-changes.git
-cd endeavouros-i3wm-setup
+cd endeavouros-i3wm-setup-fedora-changes
 cp -R .config ~/                                            
 chmod -R +x ~/.config/i3/scripts
 cp .nanorc ~/
